@@ -40,7 +40,7 @@ func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile | log.Lmicroseconds)
 	host := flag.String("l", "localhost", "address to listen on")
 	port := flag.Int("p", 3128, "port number to listen on")
-	pacurl := flag.String("C", "", "url of proxy auto-config (pac) file")
+	pacurl := flag.String("C", "http://wpad/wpad.dat", "url of proxy auto-config (pac) file")
 	domain := flag.String("d", "", "domain of the proxy account (for NTLM auth)")
 	username := flag.String("u", whoAmI(), "username of the proxy account (for NTLM auth)")
 	printHash := flag.Bool("H", false, "print hashed NTLM credentials for non-interactive use")
