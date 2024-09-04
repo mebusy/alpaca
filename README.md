@@ -1,5 +1,10 @@
 # Alpaca
 
+# My-ReadMe
+
+1. run ./build.sh to get the binary
+    - Note: in WSL, you may need edit wpad url main.go
+
 ![Latest Tag][2] ![GitHub Workflow Status][3] ![GitHub Releases][4]
 
 Alpaca is a local HTTP proxy for command-line tools. It supports proxy
