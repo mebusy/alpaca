@@ -2,25 +2,20 @@
 
 # My-ReadMe
 
-1. run ./build.sh to get the binary
+1. install alpaca
+    ```sh
+    $ brew tap samuong/alpaca
+    $ brew install samuong/alpaca/alpaca
+    ```
+2. run ./build.sh to get the binary, and replace the existing homebrew one
     - Note: in WSL, you may need edit wpad url main.go
+3. start alpaca
+    ```sh
+    $ brew services start alpaca
+    ```
 
-![Latest Tag][2] ![GitHub Workflow Status][3] ![GitHub Releases][4]
+#=============================================================================
 
-Alpaca is a local HTTP proxy for command-line tools. It supports proxy
-auto-configuration (PAC) files and NTLM authentication.
-
-## Install using Homebrew
-
-If you're using macOS and use [Homebrew](https://brew.sh/), you can install
-using:
-
-```sh
-$ brew tap samuong/alpaca
-$ brew install samuong/alpaca/alpaca
-```
-
-Launch Alpaca by running `alpaca`, or by using `brew services start alpaca`.
 
 ## Install using Go
 
